@@ -1,0 +1,163 @@
+.hero {
+  display: flex;
+  min-height: calc(100vh - 74px);
+  /* 74 px is the height of the navigation bar */
+  overflow: hidden;
+  /* overflow hidden makes sure that content is clipped */
+}
+.hero-image {
+  flex: 1;
+  direction: column;
+  display: flex;
+
+  position: relative;
+  z-index: 5;
+}
+
+.hero-image img {
+  width: 120%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-image__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.hero-image h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+
+  font-family: var(--playfair-display);
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 138px;
+  color: #fff;
+}
+
+.hero-content {
+  flex: 1.22;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content-info {
+  padding-inline-start: 64px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content-info h1 {
+  font-size: 80px;
+  font-family: var(--playfair-display);
+  color: var(--secondary-color);
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.hero-content-info p {
+  margin: 32px 0 0 32px;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+.hero-content__buttons {
+  margin: 41px 0 0 41px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.hero-content__order-button{
+    padding: 20px;
+    border-radius: 36px;
+    min-width: 212px;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.hero-content__play-button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 16px;
+    color: var(--black-200);
+    cursor: pointer;
+}
+
+
+.hero-content__play-button img{
+    object-fit: contain;
+    height: 46px;
+    width: 46px;
+    margin-right: 12px;
+}
+
+.hero-content__testimonial{
+    background-color: var( --color-white);
+    display: flex;
+}
+
+.hero-content__customer{
+    flex: 1;
+    display: flex;
+   gap: 10px;
+}
+
+.hero-content__customer h4{
+    font-size: 62px;
+    font-weight: 400;
+    font-family: var(--playfair-display);
+    color: var(--secondary-color);
+}
+
+.hero-content__customer p{
+   
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+.hero-content__review{
+    border-left: 1px solid rgb(2, 2, 2,0.1);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    min-width: 200px;
+}
+
+.hero-content__review img{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+.hero-content__review p{
+    font-family: var(--plus-jakarta-sans);
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--black-200);
+    opacity: 0.8;
+}
